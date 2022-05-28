@@ -1,0 +1,21 @@
+@import '../../assets//styles/sass/variables';
+
+.error {
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  color: $color-primary-red;
+
+  &-title {
+    font-size: 96px;
+  }
+
+  &-link {
+    color: $color-primary-red;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
