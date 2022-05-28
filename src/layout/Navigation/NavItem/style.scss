@@ -1,0 +1,22 @@
+@import '../../../assets//styles/sass/variables';
+
+.navLink {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-primary-red;
+  margin: 0 0 0 10px;
+  font-size: $fs-xs;
+
+  &.active {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .navLink {
+    text-transform: none;
+    margin: 0 0 0 50px;
+    font-size: $fs-m;
+  }
+}
