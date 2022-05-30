@@ -1,0 +1,13 @@
+@import '../../assets//styles/sass//variables';
+
+.property-tag {
+  color: $color-white;
+  background-color: $color-primary-red;
+  border-radius: $radius-xsmall;
+  padding: 5px 20px;
+  margin: 0 10px 10px 0;
+
+  &:last-child {
+    margin: 0 0 10px 0;
+  }
+}
