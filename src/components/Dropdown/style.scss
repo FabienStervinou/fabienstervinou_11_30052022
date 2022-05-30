@@ -1,0 +1,51 @@
+@import '../../assets/styles/sass/variables';
+
+.dropdown {
+  
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+    padding: 10px 18px;
+    background-color: $color-primary-red;
+    border-radius: $radius-small;
+    color: $color-white;
+  }
+
+  &-title {
+    font-size: $fs-m;
+  }
+
+  &-content {
+    display: none;
+    background-color: #F7F7F7;
+    color: $color-primary-red;
+    height: 0;
+    width: calc(100% - 40px);
+    padding: 18px;
+    animation: height ease-in-out 500ms;
+    font-weight: 300;
+    position: relative;
+    top: -10px;
+    z-index: -1;
+
+    &.isActive {
+      display: flex;
+      height: auto;
+      flex-direction: column;
+    }
+  }
+
+  &-arrow {
+    fill: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    svg {
+      transform: rotate(-90deg);
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
