@@ -1,0 +1,5 @@
+@use './assets//styles//sass/_variables.scss';
+
+main {
+  min-height: calc(100vh - 90px);
+}
