@@ -1,0 +1,63 @@
+@import '../../assets/styles/sass/variables';
+
+.property {
+  margin: 0 20px;
+  color: $color-primary-red;
+
+  &-contentContainer {
+    margin-bottom: 20px;
+  }
+
+  &-details {
+    
+  }
+
+  &-title {
+    font-size: $fs-m;
+    padding-bottom: 12px;
+  }
+
+  &-location {
+    font-size: $fs-s;
+    padding-bottom: 10px;
+  }
+
+  &-tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &-social {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    .property-user {
+      display: flex;
+    }
+
+    .property-userName {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      font-size: $fs-s;
+      margin-right: 10px;
+      text-align: end;
+    }
+
+    .property-userPicture {
+      img {
+        height: 35px;
+        width: 35px;
+        border-radius: 100%;
+      }
+    }
+
+    .property-rating {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
