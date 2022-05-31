@@ -1,3 +1,4 @@
+import React from 'react'
 import './style.scss'
 import banner from '../../assets/img/banner-top.png'
 import CardList from '../../layout/CardList/index'

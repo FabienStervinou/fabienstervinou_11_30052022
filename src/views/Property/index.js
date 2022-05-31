@@ -1,3 +1,4 @@
+import React from 'react'
 import { useParams, Navigate } from 'react-router-dom';
 import { useState } from "react";
 import datasJson from '../../assets/data/data.json'
