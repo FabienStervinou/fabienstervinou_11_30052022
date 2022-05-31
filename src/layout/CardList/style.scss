@@ -1,0 +1,23 @@
+@import '../../assets/styles/sass/_variables.scss';
+
+@media only screen and (min-width: 768px) {
+  .cardList {
+    background-color: #F4F4F4;
+    padding: 50px;
+    border-radius: $radius-md;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+
+    .card {
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .cardList {
+    grid-template-columns: minmax(0, 1fr) 1fr 1fr;
+  }
+}

@@ -43,3 +43,15 @@
     object-fit: cover;
   }
 }
+
+@media only screen and (min-width: $bp-desktop) {
+  .property-diapo {
+    &Container{
+      margin-bottom: 25px;
+    }
+
+    &Img {
+      max-height: 415px;
+    }
+  }
+} 

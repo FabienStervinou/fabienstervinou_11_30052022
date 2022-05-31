@@ -11,3 +11,10 @@
     margin: 0 0 10px 0;
   }
 }
+
+@media only screen and (min-width: $bp-desktop) {
+  .property-tag {
+    border-radius: $radius-small;
+    padding: 7px 30px;
+  }
+}
