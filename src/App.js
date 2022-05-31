@@ -1,5 +1,7 @@
 import './main.scss';
+import React from 'react'
 import { Header } from './layout/Header/index'
+import { Footer } from './layout/Footer/index'
 import { Home } from './views/home/index'
 import { About } from './views/about/index'
 import { Error404 } from './views/Error404/index'
@@ -23,6 +25,7 @@ export function App () {
             <Route exact path="/404" element={<Error404 />} />
             <Route exact path="*" element={<Navigate to="/404" replace={true} />} />
           </Routes>
+          <Footer />
       </BrowserRouter>
     </div>
   );
