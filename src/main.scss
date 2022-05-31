@@ -3,3 +3,16 @@
 main {
   min-height: calc(100vh - 90px);
 }
+
+@media only screen and (min-width: 993px) {
+  #main {
+    margin: 0 100px;
+  }
+}
+
+
+@media only screen and (min-width: 993px) {
+  #main {
+    margin: 0 100px;
+  }
+}
