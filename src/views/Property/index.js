@@ -28,7 +28,7 @@ export function Property () {
   }
 
   return (
-    <main className="property">
+    <main id="main" className="property">
       <div className="property-diapoContainer">
         <Diaporama image={data.pictures} />
       </div>
@@ -59,12 +59,13 @@ export function Property () {
           <Rating rate={data.rating}></Rating>
         </div>
       </div>
-
-      <div className="property-description">
-        <Dropdown title="Description" content={data.description} />
-      </div>
-      <div className="property-equipments">
-        <Dropdown title="Equipement" content={data.equipments} />
+      <div className="dropdownContainer">
+        <div className="property-description">
+          <Dropdown title="Description" content={data.description} />
+        </div>
+        <div className="property-equipments">
+          <Dropdown title="Equipement" content={data.equipments} />
+        </div>
       </div>
     </main>
   )

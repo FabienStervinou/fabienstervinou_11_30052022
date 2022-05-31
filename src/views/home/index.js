@@ -6,7 +6,7 @@ import CardList from '../../layout/CardList/index'
 export function Home () {
 
   return (
-    <main className='home'>
+    <main id="main" className='home'>
       <div className="banner">
         <img src={banner} alt="Paysage de montagne" />
         <h1>Chez vous, partout et ailleurs</h1>

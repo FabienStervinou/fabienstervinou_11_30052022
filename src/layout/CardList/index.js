@@ -5,7 +5,7 @@ import './style.scss'
 export default function CardList () {
 
   return (
-    <div className="cardList">
+    <section className="cardList">
       {
         Datas.map(data => {
           return (
@@ -13,6 +13,6 @@ export default function CardList () {
           )
         })
       }
-    </div>
+    </section>
   )
 }

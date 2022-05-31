@@ -24,7 +24,7 @@ export function About () {
     ]
 
   return (
-    <main className='about'>
+    <main id="main" className='about'>
       {
         contentData.map((data) => {
           return <Dropdown key={data.key} title={data.key} content={data.content} />

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export function Error404 () {
 
   return (
-  <main className='error'>
+  <main id="main" className='error'>
     <h1 className='error-title'>404</h1>
     <div className="error-description">
       Oups ! La page que vous demandez n'existe pas
