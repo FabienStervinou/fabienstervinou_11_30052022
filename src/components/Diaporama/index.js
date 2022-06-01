@@ -21,6 +21,7 @@ export default function Diaporama (props) {
     <>
       <Arrow onClick={decrement} className="arrow left" />
       <Arrow onClick={increment} className="arrow right" />
+      <span className="index">{index + 1} / {total + 1}</span>
       <img className="property-diapoImg" src={props.image[index]} alt="" />
     </>
   )

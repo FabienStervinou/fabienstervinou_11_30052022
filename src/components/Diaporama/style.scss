@@ -25,6 +25,10 @@
       }
     }
 
+    .index {
+      display: none;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -48,6 +52,28 @@
   .property-diapo {
     &Container{
       margin-bottom: 25px;
+
+      .index {
+        position: absolute;
+        display: block;
+        bottom: 20px;
+        left: 50%;
+        color: $color-white;
+        font-size: $fs-m;
+      }
+
+    .arrow {
+      height: 50px;
+      width: 50px;
+      transform: translate(10px, -50%);
+
+      &.left {
+      }
+
+      &.right {
+        transform: translate(-10px, -50%) rotate(180deg);
+      }
+    }
     }
 
     &Img {
