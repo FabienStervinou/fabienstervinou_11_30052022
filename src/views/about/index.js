@@ -1,5 +1,6 @@
 import React from 'react';
 import { Dropdown } from '../../components/Dropdown/index.js';
+import banner from "../../assets/img/banner-about.png";
 import './style.scss';
 
 export function About () {
@@ -25,6 +26,9 @@ export function About () {
 
   return (
     <main id="main" className='about'>
+      <div className="banner">
+        <img src={banner} alt="Paysage de montagne" />
+      </div>
       {
         contentData.map((data) => {
           return <Dropdown key={data.key} title={data.key} content={data.content} />
