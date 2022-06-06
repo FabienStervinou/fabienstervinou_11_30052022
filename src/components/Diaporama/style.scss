@@ -3,6 +3,7 @@
 .property-diapo {
   &Container{
     width: 100%;
+    height: 255px;
     border-radius: $radius-small;
     margin-bottom: 15px;
     overflow: hidden;
@@ -41,6 +42,7 @@
 
   &Img {
     width: 100%;
+    height: 100%;
     border-radius: $radius-small;
     vertical-align: top;
     max-height: 255px;
@@ -52,6 +54,7 @@
   .property-diapo {
     &Container{
       margin-bottom: 25px;
+      height: 415px;
 
       .index {
         position: absolute;
