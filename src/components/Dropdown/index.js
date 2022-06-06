@@ -10,16 +10,16 @@ export function Dropdown (props) {
   }
 
   return (
-    <div className="dropdown">
+    <div className={"dropdown" + (isActive ? " isActive" : "")} onClick={handleClick}>
       <div className="dropdown-header">
         <div className="dropdown-title">
           {props.title}
         </div>
-        <div onClick={handleClick} className="dropdown-arrow">
+        <div className="dropdown-arrow">
           <Arrow></Arrow>
         </div>
       </div>
-      <div className={"dropdown-content" + (isActive ? " isActive" : "")}>
+      <div className="dropdown-content">
         {
           typeof(props.content) == 'object'
           ? props.content.map((content) => <div key={content}>{content}</div>)

@@ -1,7 +1,14 @@
-@import '../../assets/styles/sass/variables';
+@import '../../assets/styles/sass/_variables.scss';
 
 .dropdown {
   margin-bottom: 20px;
+  cursor: pointer;
+
+  &:hover {
+    .dropdown-header {
+      background-color: $color-primary-red-hover;
+    }
+  }
   
   &-header {
     display: flex;
@@ -29,14 +36,8 @@
     position: relative;
     top: -10px;
     z-index: -1;
-
-    &.isActive {
-      display: flex;
-      height: auto;
-      flex-direction: column;
-    }
   }
-
+  
   &-arrow {
     fill: $color-white;
     display: flex;
@@ -47,6 +48,20 @@
       transform: rotate(-90deg);
       height: 20px;
       width: 20px;
+    }
+  }
+
+  &.isActive {
+    .dropdown-content {
+      display: flex;
+      height: auto;
+      flex-direction: column;
+    }
+
+    .dropdown-arrow {
+      svg {
+        transform: rotate(90deg);
+      }
     }
   }
 }
