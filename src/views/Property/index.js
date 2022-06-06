@@ -11,19 +11,20 @@ import './style.scss';
 export function Property () {
   let { propertyId } = useParams();
   const [data, setData] = useState({tags: [], host: []});
-  const [isLoading, setIsLoading] = useState(true);
+  const [isDataLoaded, setIsDataLoaded] = useState(false);
 
-  if (isLoading === true) {
-
+  if (isDataLoaded === false) {
     for (let i = 0; i < datasJson.length; i++) {
       const dataJson = datasJson[i];
 
       if (dataJson.id === propertyId) {
-        setIsLoading(false)
+        setIsDataLoaded(true)
         return setData(dataJson)
-      } else if (isLoading === false) {
-        return (<Navigate to="/404" replace={true} />)
       }
+    }
+
+    if (!data.id) {
+      return (<Navigate to="/404" replace={true} />)
     }
   }
 
