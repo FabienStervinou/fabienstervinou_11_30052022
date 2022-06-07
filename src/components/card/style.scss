@@ -27,6 +27,16 @@
   }
 
   &-img {
+    object-fit: cover;
+    height: 255px;
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: $bp-desktop) {
+  .card {
+    &-img {
+      height: 100%;
+    }
   }
 }
